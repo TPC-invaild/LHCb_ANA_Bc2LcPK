@@ -1,0 +1,36 @@
+J. Walsh
+21-Apr-2023
+
+Unfortunately, I am forced to maintain two different acknowledgements files. This is because the a recent request
+to add to it is only valid from 2023 on, but we have many old papers in the pipeline. There is no way to generate 
+a time-dependent acknowledgements list, although there is work going on by the FENCE team to implement something. 
+
+For now we have two files:
+
+acknowledgements.tex -- to be used on papers before 2023. 
+acknowledgements_2023_01_01.tex -- to be used on papers from 2023 on. 
+
+When modifying the acknowledgments, if it should be retroactive to older papers, then both of these files must
+be edited. If it's only for recent papers, then only the 2023 version should be modified. 
+
+MacBook [512]> diff acknowledgements.tex acknowledgements_2023_01_01.tex 
+36c36
+< EPLANET, Marie Sk\l{}odowska-Curie Actions and ERC (European Union);
+---
+> EPLANET, Marie Sk\l{}odowska-Curie Actions, ERC and NextGenerationEU (European Union);
+44c44
+< GVA, XuntaGal and GENCAT (Spain);
+---
+> GVA, XuntaGal, GENCAT, Inditex and InTalent (Spain);
+
+Note that both of these are "new" in the sense that mention of Russian agencies is removed. The version with the
+Russian agencies present still exists: acknowledgements_full.tex. It has not been updated for 2023. 
+
+5-Jun-2023
+
+I'm renaming these two acknowledgements files:
+
+acknowledgements.tex -> acknowledgements_2022.tex
+acknolwedgements_2023_01_01.tex -> acknowledgements.tex
+
+

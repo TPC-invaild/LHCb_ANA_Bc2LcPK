@@ -1,0 +1,54 @@
+\clearpage
+\newpage
+\section{Offline event selection}\label{sec:selection}
+
+\subsection{Further offline selection}
+
+\subsection{Veto on misidentified backgrounds}
+
+
+\subsection{Removal of candidates with clone tracks}
+
+\subsection{Multivariate analysis}
+\subsubsection{Training strategy}
+
+\begin{eqnarray*}
+\sqrt{\bar{p}_{\Xi_c}\,\chi^2_\textrm{IP}}_{\textrm{PV}} \\
+\sqrt{K^{+}_{\Xi_c}\,\chi^2_\textrm{IP}}_{\textrm{PV}} \\
+\sqrt{\pi^{-}_{\Xi_c}\,\chi^2_\textrm{IP}}_{\textrm{PV}} \\
+\sqrt{\sum_{\Xi_c\,\textrm{dau.}}\,\chi^2_\textrm{IP}} \\
+\log(p_{{\Lambda_c}}\,p_\mathrm{T})\\
+\log(\bar{p}_{\Xi_c}\,p_\mathrm{T})\\
+\log(K^{+}_{\Xi_c}\,p_\mathrm{T})\\
+\log(\pi^{-}_{\Xi_c}\,p_\mathrm{T})\\
+\mathcal{T}\textrm{ProbNNk}(p_{{\Lambda_c}})\\
+\mathcal{T}\textrm{ProbNNp}(p_{{\Lambda_c}})\\
+\mathcal{T}\textrm{ProbNNpi}(p_{{\Lambda_c}})\\
+\mathcal{T}\textrm{ProbNNp}(\bar{p}_{\Xi_c})\\
+\mathcal{T}\textrm{ProbNNk}(K^+_{\Xi_c})\\
+\mathcal{T}\textrm{ProbNNpi}(\pi^-_{\Xi_c})\\
+\log(\Xi_c\chi^2_\textrm{vtx.}/\textrm{ndof})\\
+\log(\Xi_c\chi^2_\textrm{FD})\\
+\log(\arccos{\textrm{DIRA}(\Xi_c)})\\
+\log(\chi^2_\textrm{DTF}(\textrm{PVFit}))\\
+\frac{\sum_{\Xi_c\,\textrm{dau.}} \,p_\mathrm{T}}{\,p_\mathrm{T}(\Xi_c)}\\
+\log(p(B))\\
+\log(\,p_\mathrm{T}(B))\\
+\log(\arccos{\textrm{DIRA}(B)})\\
+\Delta{z_\textrm{vtx}}/\sigma(\Delta{z_\textrm{vtx}})(\Lambda_c)\\
+\Delta{z_\textrm{vtx}}/\sigma(\Delta{z_\textrm{vtx}})(\Xi_c)\\
+\mathcal{T}(\prod{\textrm{ProbNNx}})
+\end{eqnarray*}
+
+\subsubsection{Optimization of MVA working point}
+
+\begin{table}[!t]
+    \caption{Determination of MVA working point.}
+    \label{tab:MVA_workingpoint}
+    \centering
+   \begin{tabular}{c|c|c|c|c|c|c|c} 
+\hline Classifier & $(S_0, B_0)$ & Working point $t$ & $\frac{S(t)}{\sqrt{S(t)+B(t)}}$ & $N_{\textrm{signal}}$ & $N_{\textrm{background}}$ & $\epsilon_{\textrm{signal}}$ & $\epsilon_{\textrm{background}}$  \\ \hline 
+DNN & (200, 12000) & 0.9975 & 11.2725 & 135.5649 & 9.063444 & 0.6778 & 0.00076 \\ BDTG & (200, 12000) & 0.9897 & 11.411 & 165.7995 & 45.31722 & 0.829 & 0.0038 \\ BDT & (200, 12000) & 0.3346 & 12.144 & 163.7984 & 18.12689 & 0.819 & 0.0015 \\ \hline 
+\end{tabular}
+
+\end{table}

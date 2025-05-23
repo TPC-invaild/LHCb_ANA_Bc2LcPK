@@ -1,0 +1,135 @@
+\def\runI  {Run~1\xspace}
+\def\runII {Run~2\xspace}
+\newcommand{\RBRresult}[4]{\ensuremath{#1\pm#2\pm#3\pm#4}}
+\newcommand{\RBRresultNoBrErr}[3]{\ensuremath{#1\pm#2(\textrm{stat.})\pm#3(\textrm{syst.})}}
+\newcommand{\RBRresultNoBrErrNoLabel}[3]{\ensuremath{#1\pm#2\pm#3}}
+
+\newcommand{\MyRBFNominal}{\ensuremath{xxxx}}
+\newcommand{\MyRBFStat}{\ensuremath{yyyy}}  
+\newcommand{\MyRBFSyst}{\ensuremath{zzzz}}
+
+
+\newcommand{\RBF}[2]{\ensuremath{\frac{\BF\left(#1\right)}{\BF\left(#2\right)}}\xspace}
+
+\def\Bds{{\ensuremath{\B^0_{\kern -0.1em{\scriptscriptstyle (}\kern -0.05em\squark\kern -0.03em{\scriptscriptstyle )}}}}\xspace}
+\def\Bdsbar{{\ensuremath{\Bbar{}^0_{\kern -0.1em{\scriptscriptstyle (}\kern -0.05em\squark\kern -0.03em{\scriptscriptstyle )}}}}\xspace}
+
+\newcommand{\DsDs}{\Dsp \Dsm}
+\newcommand{\DsD}{\Dsp \Dm}
+\newcommand{\LcLcbar}{\Lc \Lcbar}
+\newcommand{\LcXicbar}{\Lc\Xicbarm}
+
+% Charmed baryons
+% %%%%%%%%%%%%%%%
+\newcommand{\LcPKPi}{\texorpdfstring{\decay{\Lc}{\proton \Km \pip}}{}}
+\newcommand{\LcPKS}{\texorpdfstring{\decay{\Lc}{\proton \KS}}{}}
+\newcommand{\LcLPi}{\texorpdfstring{\decay{\Lc}{\Lz \pip}}{}}
+\newcommand{\DsKKpi}{\texorpdfstring{\decay{\Dsp}{\Km\Kp\pip}}{}}
+\newcommand{\DKpipi}{\texorpdfstring{\decay{\Dp}{\Km\pip\pip}}{}}
+
+% Charmless 2-body
+\newcommand{\BdKPi}{\texorpdfstring{\decay{\Bd}{\Kp \pim}}{}}
+\newcommand{\BdPiPi}{\texorpdfstring{\decay{\Bd}{\pip \pim}}{}}
+\newcommand{\BdKK}{\texorpdfstring{\decay{\Bd}{\Kp \Km}}{}}
+\newcommand{\BdDsD}{\texorpdfstring{\decay{\Bd}{\Dsp \Dm}}{}}
+
+\newcommand{\BdDKKpi}{\texorpdfstring{\decay{\Bd}{\Dm \Kp \Km \pip}}{}}
+
+\newcommand{\BdDsDKKpiKpipi}{\texorpdfstring{\decay{\Bd}{\Dsp(\Km\Kp\pip) \Dm(\Kp\pim\pim)}}{}}
+
+\newcommand{\BdLcLcbar}{\texorpdfstring{\decay{\Bdb}{\Lc \Lcbar}}{}}
+\newcommand{\BdLcpKpi}{\texorpdfstring{\decay{\Bd}{\Lcbar  \antiproton \Kp \pim}}{}}
+\newcommand{\BLcLcbar}{\texorpdfstring{\decay{\Bdsbar}{\Lc \Lcbar}}{}}
+\newcommand{\BLcXicbar}{\texorpdfstring{\decay{\Bds}{\Lc \Xicbarm}}{}}
+\newcommand{\BdKSPPbar}{\texorpdfstring{\decay{\Bd}{\KS \proton \antiproton}}{}}
+\newcommand{\BdPLbarPi}{\texorpdfstring{\decay{\Bd}{\proton \Lbar \pim}}{}}
+\newcommand{\BdPLbarK}{\texorpdfstring{\decay{\Bd}{\proton \Lbar \Km}}{}}
+\newcommand{\BdPSbarPi}{\texorpdfstring{\decay{\Bd}{\proton \Sbar^0 \pim}}{}}
+
+\newcommand{\BsDsD}{\texorpdfstring{\decay{\Bs}{\Dsm \Dp}}{}}
+\newcommand{\BsDsDs}{\texorpdfstring{\decay{\Bs}{\Dsp \Dsm}}{}}
+\newcommand{\BsDsKKpi}{\texorpdfstring{\decay{\Bs}{\Dsm \Kp \Km \pip}}{}}
+
+\newcommand{\BsDsDsKKpiKKpi}{\texorpdfstring{\decay{\Bs}{\Dsp(\Km\Kp\pip) \Dsm(\Kp\Km\pim)}}{}}
+
+\newcommand{\BsLcLcbar}{\texorpdfstring{\decay{\Bsb}{\Lc \Lcbar}}{}}
+\newcommand{\BsLcpKpi}{\texorpdfstring{\decay{\Bs}{\Lcbar  \antiproton \Kp \pim}}{}}
+\newcommand{\LbPPi}{\texorpdfstring{\decay{\PLambda_b^0}{\proton \pim}}{}}
+\newcommand{\LbPK}{\texorpdfstring{\decay{\PLambda_b^0}{\proton \Km}}{}}
+\newcommand{\BsKSPPbar}{\texorpdfstring{\decay{\Bs}{\KS \proton \antiproton}}{}}
+\newcommand{\BsPPbarKK}{\texorpdfstring{\decay{\Bs}{\proton \antiproton \kaon \kaon}}{}}
+\newcommand{\BsJpsiPhi}{\texorpdfstring{\decay{\Bs}{\jpsi \phi}}{}}
+\newcommand{\BsJPsiKst}{\texorpdfstring{\decay{\Bs}{\jpsi \Kstar}}{}}
+
+% Lambda_b decays
+% %%%%%%%%%%%%%%%
+\newcommand{\LbLcDs}{\texorpdfstring{\decay{\Lb}{\Lc \Dsm}}{}}
+\newcommand{\LbLcD}{\texorpdfstring{\decay{\Lb}{\Lc \Dm}}{}}
+\newcommand{\LbLcpppi}{\texorpdfstring{\decay{\Lb}{\Lc \proton \antiproton \pim}}{}}
+\newcommand{\LbLcKKpi}{\texorpdfstring{\decay{\Lb}{\Lc \Kp \Km \pim}}{}}
+% Charmonium
+\newcommand{\LbJPsiPK}{\texorpdfstring{\decay{\Lb}{\jpsi \proton \Kp}}{}}
+% Open-charm
+\newcommand{\LbLcPi}{\texorpdfstring{\decay{\Lb}{\Lc \pim}}{}}
+\newcommand{\LbLcK}{\texorpdfstring{\decay{\Lb}{\Lc \Km}}{}}
+% Charmless
+\newcommand{\LbLK}{\texorpdfstring{\decay{\Lb}{\Lz \Km}}{}}
+\newcommand{\LbLPi}{\texorpdfstring{\decay{\Lb}{\Lz \pim}}{}}
+\newcommand{\LbKSPK}{\texorpdfstring{\decay{\Lb}{\KS \proton \Km}}{}}
+\newcommand{\LbKSPPi}{\texorpdfstring{\decay{\Lb}{\KS \proton \pim}}{}}
+\newcommand{\LbLPiPi}{\texorpdfstring{\decay{\Lb}{\Lz \pip \pim}}{}}
+\newcommand{\LbPHHH}{\texorpdfstring{\decay{\Lb}{\proton h^- h^+ h^-}}{}}
+\newcommand{\LbPPbarPH}{\texorpdfstring{\decay{\Lb}{\proton \antiproton \proton h^-}}{}}
+
+% Xi decays
+\newcommand{\XiczXimpip}{\texorpdfstring{\decay{\Xicz}{\Xi^{-} \pip}}{}}
+
+
+%Effciencies
+\newcommand{\effTot}[1]             {{\ensuremath{\varepsilon^{\mathrm{tot}}_{#1}}}\xspace}
+\newcommand{\effGeom}[1]            {{\ensuremath{\varepsilon^{\mathrm{geom}}_{#1}}}\xspace}
+\newcommand{\effRecStrip}[1]       {{\ensuremath{\varepsilon^{\mathrm{rec,strip}}_{#1}}}\xspace}
+\newcommand{\effPresel}[1]          {{\ensuremath{\varepsilon^{\mathrm{presel}}_{#1}}}\xspace}
+\newcommand{\effPIDIP}[1]             {{\ensuremath{\varepsilon^{\mathrm{PID \& IPCHI2}}_{#1}}}\xspace}
+\newcommand{\effPID}[1]             {{\ensuremath{\varepsilon^{\mathrm{PID}}_{#1}}}\xspace}
+\newcommand{\effIP}[1]             {{\ensuremath{\varepsilon^{\mathrm{IPCHI2}}_{#1}}}\xspace}
+\newcommand{\efflTOS}[1]            {{\ensuremath{\varepsilon^{\ell \mathrm{TOS}}}}\xspace}
+\newcommand{\efflTIS}[1]            {{\ensuremath{\varepsilon^{\ell \mathrm{TIS}}_{#1}}}\xspace}
+\newcommand{\effTrig}[1]            {{\ensuremath{\varepsilon^{\mathrm{trig}}_{#1}}}\xspace}
+\newcommand{\effMVA}[1]             {{\ensuremath{\varepsilon^{\mathrm{MVA}}_{#1}}}\xspace}
+\newcommand{\effFit}[1]             {{\ensuremath{\varepsilon^{\mathrm{fit range}}_{#1}}}\xspace}
+
+\def\mKKpi       {\ensuremath{m_{KK\pi}}\xspace}
+ \def\mKpipi       {\ensuremath{m_{K\pi\pi}}\xspace}
+
+ \def\mLcLc       {\ensuremath{m_{\LcLcbar}}\xspace}           
+ \def\mLcXic       {\ensuremath{m_{\LcXicbar}}\xspace}           
+ \def\mdsds       {\ensuremath{m_{\DsDs}}\xspace}                 
+ \def\mdsd        {\ensuremath{m_{\DsD}}\xspace}    
+ \def\mlc         {\ensuremath{m_{\Lc}}\xspace}
+ \def\mxic         {\ensuremath{m_{\Xicp}}\xspace} 
+ \def\mlcbar      {\ensuremath{m_{\Lcbar}}\xspace}       
+ \def\mxicbar         {\ensuremath{m_{\Xicbarm}}\xspace} 
+ \def\mdsp        {\ensuremath{m_{\Dsp}}\xspace}
+ \def\mdsm        {\ensuremath{m_{\Dsm}}\xspace}               
+ \def\mdm          {\ensuremath{m_{\Dm}}\xspace}            
+
+
+%% loki functions
+\def\probnn     {\texttt{ProbNN}\xspace} 
+\def\probnnp     {\texttt{ProbNNp}\xspace} 
+\def\probnnk     {\texttt{ProbNNk}\xspace} 
+\def\probnnpi     {\texttt{ProbNN{\pi}}\xspace} 
+%\def\prodprobnnp     {\ensuremath{\Pi_i(p_i\textrm{ProbNN}p)}\xspace} 
+\def\prodprobnnx     {\ensuremath{\Pi_i(p_i\textrm{ProbNN}x)}\xspace} 
+%\def\Bipchisq    {\texttt{B\_IPCHI2\_OWNPV}\xspace} 
+%\def\Bvtxchisq    {\texttt{B\_ENDVERTEX\_CHI2}\xspace} 
+%\def\logBipchisq    {\ensuremath{\log(\Bipchisq)}\xspace} 
+%\def\Bipchisqmath    {\ensuremath{(B\, \textrm{IP}\chi^2)}\xspace} 
+
+\def\FOMa    {\ensuremath{S/\sqrt{S+B}}\xspace} 
+\def\FOMb    {\ensuremath{S/\sqrt{B}}\xspace} 
+\def\FOMaf    {\ensuremath{\frac{S}{\sqrt{S+B}}}\xspace} 
+\def\FOMbf    {\ensuremath{\frac{S}{\sqrt{B}}}\xspace} 
+\def\FOMp    {\ensuremath{\epsilon/(\sigma/2+\sqrt{B})}\xspace}
+\def\FOMpf    {\ensuremath{\frac{\epsilon}{\frac{\sigma}{2}+\sqrt{B}}}\xspace}

@@ -1,0 +1,75 @@
+\clearpage
+\newpage
+\section{Data and simulation samples}\label{sec:samples}
+
+\subsection{Data samples}
+
+Data samples used in this analysis were collected during the operating period of the LHC machine in 2016, 2017, 2018, and 2024 (with UT). Table~\ref{tab:data_samples} presents the center-of-mass energies and the corresponding integrated luminosities from 2015 to 2018, and Table~\ref{tab:data_samples_2024} shows the similar information for 2024 data-taking.
+
+\begin{table}[htbp]
+\centering
+\caption{Information on the data samples collected for \runII data-taking.}
+\label{tab:data_samples}
+\begin{tabular}{c c c c c}
+ \toprule
+{Year} &  {Reco} &  {Stripping} & $\sqs \, [\tev]$ & $\int \lum\,\mathrm{d}t\,[\invfb]$\\
+\midrule
+ 2016 & \texttt{16}  & \texttt{28r2} & 13 & 1.63\\
+ 2017 & \texttt{17}  & \texttt{29r2} & 13 & 1.47\\
+ 2018 & \texttt{18}  & \texttt{34} & 13 & 2.02\\ \midrule
+ Total &   &  &  &  5.40\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Information on the data samples collected for 2024 data-taking with UT.}
+\label{tab:data_samples_2024}
+\begin{tabular}{c c  c c}
+ \toprule
+{Campaign}  &  {Sprucing} & $\sqs \, [\tev]$ & $\int \lum\,\mathrm{d}t\,[\invfb]$\\
+\midrule
+ 24c3   & \texttt{TurboPass,24r2p1/24r2p4} & 13.6 & 1.160 + 0.998 = 2.158 \\
+ 24c4   & \texttt{TurboPass,24r3p1} & 13.6 & 0.737 + 0.435 = 1.172 \\
+ Total  &  &  &  3.330 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Event reconstruction with \runII data}
+\subsubsection{Trigger decision}
+\label{sec:trigger}
+%
+At the hardware trigger level (L0), an event is required to have a particle from the signal decay that passes the energy threshold on the hadronic calorimeter (Trigger On Signal, \texttt{TOS}) or any threshold if the particle is independent of the signal (Trigger Independent of Signal, \texttt{TIS}). At the first software trigger level (HLT1), the \texttt{Hlt1TrackMVA} and \texttt{Hlt1TwoTrackMVA} algorithms are used to select \runII data: the line \texttt{Hlt1TrackMVA} selects tracks with large \chisqip and \pt, while \texttt{Hlt1TwoTrackMVA} selects two tracks with reasonably large \chisqip and \pt and requires the two tracks to form a good vertex with a large invariant mass. At the second software trigger level (HLT2), a multivariate algorithm trained on $B$-hadron samples looks for either 2, 3, or 4 decay daughters that could combine to be compatible with a partially or fully reconstructed $B$-hadron candidate.
+
+The same trigger requirements applied to the signal are also applied to the normalization modes, as is shown in Tab.~\ref{tab:triggerRun2}.
+
+\begin{table}[hbp]
+\centering
+\caption{Trigger requirements applied to all \runII samples for both signal and normalization channels.}
+\label{tab:triggerRun2} %\vspace{-20pt} 
+\begin{tabular}{c c} \multicolumn{2}{l}{}  \\ \toprule {Level}    & {Line}  \\ \midrule L0      & L0
+OR of Hadron, Election, Muon, DiMuon TIS lines \\ & L0HadronDecision TOS \\ \multicolumn{2}{r}{OR of both L0 lines} \\ \midrule \hltone    & Hlt1TrackMVADecision TOS \\ & Hlt1TwoTrackMVADecision TOS \\ \multicolumn{2}{r}{OR of both HLT1 lines} \\ \hlttwo    & Hlt2Topo2BodyDecision TOS \\ & Hlt2Topo3BodyDecision TOS \\ & Hlt2Topo4BodyDecision TOS \\ \multicolumn{2}{r}{OR of both HLT2 lines} \\ \bottomrule 
+\end{tabular}
+\end{table}
+
+
+
+\subsubsection{Reconstruction and selection in Stripping line}
+\label{sec:stripping}
+%
+The charmed hadrons originate from the \texttt{StrippingCC2DDLine} and are named \Dm, \Dsm, \Xicbarm and \Lc based on mass windows. Subsequently, these particles are combined together to form a $B$ meson, and a new vertex fitting is performed accordingly.
+
+\subsection{Event reconstruction with 2024 data}
+
+
+\subsection{Simulated samples}
+
+\subsection{Truth-matching}
+\subsection{Correction to the simulated samples}
+
+\subsubsection{PID correction}
+
+
+\subsubsection{Kinematical correction }
